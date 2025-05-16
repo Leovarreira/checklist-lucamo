@@ -27,7 +27,6 @@ main {
 .form-section {
     flex-grow: 0.3;
     padding: 0 35px;
-    gap: 34px;
 
     img {
         margin-bottom: 30px;
@@ -36,6 +35,7 @@ main {
     h2 {
         font-size: 20px;
         font-weight: bold;
+        margin-bottom: 45px;
     }
 
     .btn-wrapper {
@@ -74,6 +74,10 @@ main {
             background: transparent;
             padding: 12px 24px;
             cursor: pointer;
+
+            &:disabled {
+                opacity: 0.8;
+            }
 
             &.btn-primary {
                 background-color: $primary-color;
